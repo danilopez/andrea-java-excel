@@ -1,3 +1,5 @@
+package programadietas;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -50,7 +52,7 @@ public final class baseDeDatos {
 
   try {
    //Aquí se obtiene la conexión:
-   conn = DriverManager.getConnection("jdbc:sqlite:" + "C:\\Users\\Andreita\\Desktop\\Matemáticas\\Trabajo Fin de Grado\\ProgramaDietas\\src\\programadietas\\FEDNA.xls");
+   conn = DriverManager.getConnection("jdbc:sqlite:FEDNA.xls");
    //Un mensaje en la consola para saber si se realizó la conexión y donde está el archivo:
    System.out.println("Conexión realizada correctamente - Ruta de base de datos: " + "C:\\Users\\Andreita\\Desktop\\Matemáticas\\Trabajo Fin de Grado\\ProgramaDietas\\src\\programadietas\\FEDNA.xls");
   }

@@ -7,6 +7,8 @@
 
 package programadietas;
 
+import java.sql.Connection;
+
 /**
  *
  * @author Andreita
@@ -462,6 +464,8 @@ public class Ventana extends javax.swing.JFrame {
                 new Ventana().setVisible(true);
             }
         });
+        baseDeDatos bdClass = new baseDeDatos();
+        Connection conn = bdClass.conectar("");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
